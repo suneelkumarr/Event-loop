@@ -1,5 +1,10 @@
-import { NextResponse } from "next/server";
+export const dynamic = "force-static"; // 👈 makes this route exportable
 
 export async function GET() {
-  return NextResponse.json({ message: "Good!" });
+  return new Response(
+    JSON.stringify({ message: "Good!" }),
+    {
+      headers: { "Content-Type": "application/json" },
+    }
+  );
 }
