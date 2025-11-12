@@ -39,7 +39,7 @@ export default function EventLoopVisualization() {
   }, [isAnimating, currentStep, steps.length])
 
   const runSyncDemo = () => {
-    const results = []
+    const results: string[] = [];
     results.push('🚀 Starting synchronous operations...')
     
     setTimeout(() => results.push('📄 Reading file (blocking)...'), 100)
@@ -51,7 +51,7 @@ export default function EventLoopVisualization() {
   }
 
   const runAsyncDemo = () => {
-    const results = []
+    const results: string[] = [];
     results.push('🚀 Starting asynchronous operations...')
     
     setTimeout(() => results.push('⚡ Reading file (non-blocking)...'), 100)
