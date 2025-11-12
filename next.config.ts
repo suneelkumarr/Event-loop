@@ -1,20 +1,23 @@
 import type { NextConfig } from "next";
 
-const repoName = '/Event-loop'; // 👈 Replace this with your GitHub repo name
+const repoName = "Event-loop"; // ✅ Do not include a leading slash
+
+const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
-  // Enable static export mode for GitHub Pages
+  // Export static HTML for GitHub Pages
   output: "export",
 
-  // Required for GitHub Pages (hosted under a subpath)
-  basePath: process.env.NODE_ENV === "production" ? `/${repoName}` : "",
+  // GitHub Pages serves your site from /Event-loop
+  basePath: isProd ? `/${repoName}` : "",
+  assetPrefix: isProd ? `/${repoName}/` : "",
 
-  // Disable image optimization since GitHub Pages doesn’t support Next.js Image Optimization
+  // Disable Next.js image optimization (GitHub Pages is static)
   images: {
     unoptimized: true,
   },
 
-  // TypeScript and ESLint options
+  // Allow builds even with type/ESLint warnings
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -22,13 +25,10 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
 
-  // React settings
+  // Optional: disable hot reload in dev
   reactStrictMode: false,
-
-  // Custom webpack settings
   webpack: (config, { dev }) => {
     if (dev) {
-      // Disable webpack hot reload (optional)
       config.watchOptions = {
         ignored: ["**/*"],
       };
