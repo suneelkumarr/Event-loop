@@ -14,26 +14,52 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Z.ai Code Scaffold - AI-Powered Development",
-  description: "Modern Next.js scaffold optimized for AI-powered development with Z.ai. Built with TypeScript, Tailwind CSS, and shadcn/ui.",
-  keywords: ["Z.ai", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "AI development", "React"],
-  authors: [{ name: "Z.ai Team" }],
+  title: "Node.js Event Loop – Visual Explanation",
+  description:
+    "An interactive and visual explanation of how the Node.js Event Loop works — including phases, callbacks, timers, and async operations. Built with Next.js, TypeScript, Tailwind CSS, and shadcn/ui.",
+  keywords: [
+    "Node.js",
+    "Event Loop",
+    "Asynchronous JavaScript",
+    "Concurrency",
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "shadcn/ui",
+    "JavaScript internals",
+    "Node.js architecture"
+  ],
+  authors: [{ name: "Suneel Kumar" }],
   icons: {
-    icon: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
+    icon: "/Event-loop/nodejs-event-loop-official.png", // ✅ Adjusted for GitHub Pages path
   },
   openGraph: {
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
-    url: "https://chat.z.ai",
-    siteName: "Z.ai",
+    title: "Node.js Event Loop - Visual Explanation",
+    description:
+      "Explore the Node.js Event Loop visually. Learn how async tasks, timers, and callbacks flow through each phase.",
+    url: "https://suneelkumarr.github.io/Event-loop",
+    siteName: "Node.js Event Loop",
     type: "website",
+    images: [
+      {
+        url: "https://suneelkumarr.github.io/Event-loop/nodejs-event-loop-official.png",
+        width: 1200,
+        height: 630,
+        alt: "Node.js Event Loop Diagram",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
+    title: "Node.js Event Loop – Visual Explanation",
+    description:
+      "Understand the Node.js Event Loop visually with an interactive Next.js project.",
+    images: [
+      "https://suneelkumarr.github.io/Event-loop/nodejs-event-loop-official.png",
+    ],
   },
 };
+
 
 export default function RootLayout({
   children,
