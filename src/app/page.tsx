@@ -117,7 +117,7 @@ export default function EventLoopVisualization() {
                   <h3 className="text-xl font-semibold text-center">The Node.js Event Loop Architecture</h3>
                   <div className="flex items-center justify-center">
                     <img
-                      src="/nodejs-event-loop-official.png"
+                      src="/Event-loop/nodejs-event-loop-official.png"
                       alt="Node.js Event Loop Architecture Diagram"
                       className="rounded-lg shadow-xl max-w-full h-auto border border-gray-200"
                     />
@@ -299,7 +299,7 @@ export default function EventLoopVisualization() {
                   <h3 className="text-xl font-semibold text-center">Synchronous vs Asynchronous Programming</h3>
                   <div className="flex items-center justify-center">
                     <img
-                      src="/sync-async-comparison-official.png"
+                      src="/Event-loop/sync-async-comparison-official.png"
                       alt="Synchronous vs Asynchronous Programming Comparison"
                       className="rounded-lg shadow-xl max-w-full h-auto border border-gray-200"
                     />
@@ -468,7 +468,7 @@ console.log('End'); // Runs immediately, doesn't wait`}
                   <h3 className="text-xl font-semibold text-center">The 6 Phases of Event Loop</h3>
                   <div className="flex items-center justify-center">
                     <img
-                      src="/event-loop-phases-official.png"
+                      src="/Event-loop/event-loop-phases-official.png"
                       alt="Event Loop Phases Diagram"
                       className="rounded-lg shadow-xl max-w-full h-auto border border-gray-200"
                     />
@@ -644,7 +644,7 @@ console.log('End'); // Runs immediately, doesn't wait`}
               <CardContent className="pt-6">
                 <div className="flex items-center justify-center mb-6">
                   <img
-                    src="/kitchen-event-loop-promo.png"
+                    src="/Event-loop/kitchen-event-loop-promo.png"
                     alt="Kitchen Event Loop Analogy"
                     className="rounded-lg shadow-lg max-w-full h-auto max-h-96 object-cover"
                   />
